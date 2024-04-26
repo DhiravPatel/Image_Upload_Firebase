@@ -1,0 +1,51 @@
+<div class="main">
+    <!-- <h1>Upload a File</h1> -->
+
+    <div class="form">
+
+        <div class="field">
+            <h2>Get Started Now</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="input_form form-control transparent-input" id="email"  aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                    <input type="text" class="input_form form-control transparent-input" id="username"  aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="input_form form-control transparent-input" id="password">
+                </div>
+                
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Choose File</label>
+                    <input class="input_form form-control transparent-input" type="file" (change)="onFileChange($event)" id="formFile" multiple>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I agree to the Terms & Privacy</label>
+                  </div>
+               
+                <button type="button" (click)="upload()"  class="rg_btn">Upload</button>
+            </form>
+            
+           
+        </div>
+       
+        <div class="img">
+            <img style="width: 100%; height: 100%;" src="../../assets/image.png" alt="">
+            
+        </div>
+       
+          
+          
+    </div>
+
+</div>
+
+
+
+
